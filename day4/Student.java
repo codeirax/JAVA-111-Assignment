@@ -61,16 +61,7 @@ public void setMarks(int marks) {
 		  this.age = a;
 		  this.marks= m;
 	  }
-//	  else {
-//		  
-//		  System.out.println("Invalid args");
-//	  }
-//	
-//	  this.roll = r;
-//	  this.name = n;
-//	  this.age = a;
-//	  this.marks= m;
-//	  
+
   }
 
   public void printDetails() {
@@ -82,7 +73,7 @@ public void setMarks(int marks) {
 	  }
 	   else {
 		   System.out.println("Invalid");
-  }
+   }
 	  
 	  
   }
