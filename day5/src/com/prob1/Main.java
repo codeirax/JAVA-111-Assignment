@@ -13,6 +13,7 @@ class Employee {
    Employee(){
 	
    }
+   
 	public int getEmployeeId() {
 		return employeeId;
 	}
@@ -80,12 +81,14 @@ public static Employee getEmployeeDetails() {
 		 System.out.println("Enter Employee Id");
 		 int enteredId = sc.nextInt();
 		 
+		 sc.nextLine();
 		 System.out.println("Enter Employee Name");
 		 String enteredName = sc.nextLine();
-		 sc.nextLine();
+	
 		 
 		 System.out.println("Enter Your salary");
 		 int enteredSalary = sc.nextInt();
+
 		 
 //		 creating object with the help of constructor
 		 
@@ -110,7 +113,7 @@ public static Employee getEmployeeDetails() {
 	 public static void main(String[] args) {
 		
 		 
-		Employee e1 = Main.getEmployeeDetails();   // calling method to enter details
+		Employee e1 = Main.getEmployeeDetails();   // calling method it will return object after taking input
 		
 		int pfpercentage = Main.getPFPercentage(); //  giving pf percent value here
 		
@@ -120,10 +123,22 @@ public static Employee getEmployeeDetails() {
 	       
 	       
 	       System.out.println("Id :" +  e1.getEmployeeId());
+	       
 	       System.out.println("Name :" +  e1.getEmployeename());
+
+	      
 	       System.out.println("Salary :" +  e1.getSalary());
 	       
 	       System.out.println("Net Salary:" +  e1.getNetSalary());
+	       System.out.println("************************");
+	       
+	       Employee e2 = Main.getEmployeeDetails();
+	       pfpercentage = Main.getPFPercentage();
+	       e2.calculateNetSalary(pfpercentage);
+	       
+	       System.out.println("Id :" +  e2.getEmployeeId());
+	       System.out.println("Name :" +  e2.getEmployeename());
+	       System.out.println("Salary :" +  e2.getSalary());
 	       
 	}
 	 	 
