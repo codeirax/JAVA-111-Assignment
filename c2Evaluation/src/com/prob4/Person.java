@@ -72,9 +72,9 @@ class Main{
 		
 		Person newStudent = generatePerson(new Student());
 		Person newTeacher = generatePerson(new Instructor());
+		System.out.println(newStudent);
+		System.out.println(newTeacher);
 		
-		System.out.println(newStudent.toString());
-		System.out.println(newTeacher.toString());
 	}
 }
 
