@@ -58,9 +58,12 @@ public Student() {
 }
 
 @Override
+
 public String toString() {
 	return "[Roll : " + getRoll() + ", Name :" + getName() + ", Marks :" + getMarks()+ ", Grade :" + getGrade() + ",]";
 }
+
+
 public void displayDetails() {
 	
 	Scanner sc = new Scanner(System.in);
@@ -68,12 +71,12 @@ public void displayDetails() {
 	System.out.println("Enter the roll no of Student");
       int enteredRoll = sc.nextInt();
       
-      sc.nextInt();
+   sc.nextLine();
       
       System.out.println("Enter Student Name ");
-       String enteredName =  sc.next();
+       String enteredName =  sc.nextLine();
      
-//     sc.nextLine();
+
      
      System.out.println("Enter Marks of the Student");
     int enterdMarks =  sc.nextInt();

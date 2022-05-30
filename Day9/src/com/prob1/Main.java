@@ -4,8 +4,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-  Student s1 = new Student();
-  s1.displayDetails();
+     Student s1 = new Student();
+     s1.displayDetails();
+    System.out.println(s1);
+  
 	}
 
 }
