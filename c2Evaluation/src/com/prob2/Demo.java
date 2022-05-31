@@ -3,118 +3,47 @@ package com.prob2;
 import java.util.Scanner;
 
 public class Demo {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the no. of students :");
+		int num = input.nextInt();
+		Student[] arr = new Student[num];     // Declaring array.
+		int totalMarks = 0;   
+		System.out.println("-----------------------------------------");
 		
+		for(int i = 0; i < num; i++) {
+			System.out.println("Enter the roll no. of student " + (i + 1) + " : ");
+			int roll = input.nextInt();
+			System.out.println("Enter the name of student " + (i + 1) + " : ");
+			String name = input.next();
+			input.nextLine();
+			System.out.println("Enter the address no. of student " + (i + 1) + " : ");
+			String address = input.nextLine();
+			System.out.println("Enter the marks of student " + (i + 1) + " : ");
+			int marks = input.nextInt();
+			
+			Student student = new Student();   // Creating object with the help of parent variable.
+			
+			student.setRoll(roll);   // Setting values
+			student.setName(name);
+			student.setAddress(address);
+			student.setMarks(marks);
+			
+			totalMarks += marks;   // Getting total marks here
+			
+			arr[i] = student;    // setting objects into array
+			System.out.println("-----------------------------------------");
+		}
 		
+//		Now in the array I have all the objects now i Need to print
 		
-		Scanner in = new Scanner(System.in);
-		System.out.println("Enter How many Student object need to Create");
-            int enteredObjNumber =  in.nextInt();
-           
-           for(int i = 0; i<enteredObjNumber; i++) {
-        	   Student[] studObject = new Student[enteredObjNumber];
-        	   
-        	   System.out.println("Enter Student Name");
-        	    String enteredName =  in.next();
-        	    
-        	    System.out.println("Enter Student roll");
-        	    int enteredroll =  in.nextInt();
-        	    
-        	    System.out.println("Enter Student Address");
-        	    String enteredAddress =  in.next();
-        	    
-        	    System.out.println("Enter Student Marks");
-        	    int enteredmarks =  in.nextInt();
-        	    
-        	   studObject[i] = new Student(enteredName,enteredroll,enteredAddress,enteredmarks);
-        	    int average   =   studObject[i].getMarks()/enteredObjNumber;
-        	    
-        	    System.out.println(studObject[i].getName());
-    	       System.out.println(studObject[i].getRoll());
-    	        System.out.println(studObject[i].getAddress());
-    	        System.out.println(studObject[i].getMarks());
-        	 
-    	      System.out.println("Average of all Student marks is :"  + average);
-           }
-           
-          
+		for(int i = 0; i < arr.length; i++) {
+			System.out.println("Roll no. of the student " + (i + 1) + " is " + arr[i].getRoll());
+			System.out.println("Name of the student " + (i + 1) + " is " + arr[i].getName());
+			System.out.println("Address of the student " + (i + 1) + " is " + arr[i].getAddress());
+			System.out.println("Marks of the student " + (i + 1) + " is " + arr[i].getMarks());
+			System.out.println("-----------------------------------------");
+		}
+		System.out.println("Average marks of all students is " + ((double)totalMarks/arr.length));
 	}
-
-
-
-}
-
-
-class Student{
-	
-	
-	int roll;
-	String name;
-	String address;
-	int marks;
-	
-	
-	
-	public int getRoll() {
-		return roll;
-	}
-
-
-
-//	public void setRoll(int roll) {
-//		this.roll = roll;
-//	}
-
-
-
-	public String getName() {
-		return name;
-	}
-
-
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-
-
-	public String getAddress() {
-		return address;
-	}
-
-
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-
-
-	public int getMarks() {
-		return marks;
-	}
-
-
-
-	public void setMarks(int marks) {
-		this.marks = marks;
-	}
-
-
-
-	public Student(String enteredName, int enteredroll, String enteredAddress, int enteredmarks) {
-		super();
-	
-		this.name = enteredName;
-		this.roll = enteredroll;
-		this.address = enteredAddress;
-		this.marks = enteredmarks;
-	}
-	
-	
-	
-
 }
