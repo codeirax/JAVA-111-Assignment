@@ -5,20 +5,23 @@ import java.util.Scanner;
 public class Demo{
 	
 	public Hotel provideFood(int amount) {
+		
+		Hotel hotel;
 		if(amount >= 1000) {
-		   TajHotel hotel =  new TajHotel();
+		      hotel =  new TajHotel();
 		   return hotel;
 		}
 		else if(amount > 200 && amount < 1000) {
-			RoadSideHotel hotel =  new RoadSideHotel();
+			 hotel =  new RoadSideHotel();
 			return hotel;
-		}else {
-			
-	   return null;
 		}
 		
-		
+		return null;
 	}
+	
+	
+	
+	
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
@@ -26,20 +29,24 @@ public class Demo{
 		System.out.println("Please Enter Amount");
 		int enteredUserAmount = in.nextInt();
 		
-          Demo d1  = new Demo();
-        
-         
-       if(d1.provideFood(enteredUserAmount) == null) {
-    	   System.out.println("Please enter Valid Amount");
-       }
-       else {
-    	  Hotel hotel =  d1.provideFood(enteredUserAmount);
-         hotel.chickenBiryani();
-         hotel.masalaDosa();  
-        
-       }
-       
-      
+		Demo d1 = new Demo();
+	Hotel hotel = d1.provideFood(enteredUserAmount); // calling and catching in Hotel 
+		
+		if(hotel != null) {
+			hotel.chickenBiryani();
+			hotel.masalaDosa();
+			
+			if(hotel instanceof TajHotel) {     // Preventing class cast exception
+			TajHotel  taj	= (TajHotel)hotel;
+			taj.welcomeDrink();
+			
+			}
+			
+		}else {
+			System.out.println("Please enter Valid Amount");
+		}
+		
+	
      
 
 		

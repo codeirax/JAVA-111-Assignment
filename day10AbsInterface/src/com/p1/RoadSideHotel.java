@@ -12,7 +12,7 @@ public class RoadSideHotel implements Hotel {
 	public void masalaDosa() {
 		// TODO Auto-generated method stub
 		
-		System.out.println("Masa dosa from Roadside Hotel");
+		System.out.println("Masala dosa from Roadside Hotel");
 		
 	}
 
