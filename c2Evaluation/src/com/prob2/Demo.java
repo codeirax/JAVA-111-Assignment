@@ -35,7 +35,7 @@ public class Demo {
 			System.out.println("-----------------------------------------");
 		}
 		
-//		Now in the array I have all the objects now i Need to print
+//		Now in the array which I have all the objects now i Need to print
 		
 		for(int i = 0; i < arr.length; i++) {
 			System.out.println("Roll no. of the student " + (i + 1) + " is " + arr[i].getRoll());

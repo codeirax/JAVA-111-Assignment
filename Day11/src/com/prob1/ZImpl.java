@@ -22,8 +22,8 @@ public class ZImpl implements  Z{
 		
 	}
 
-	@Override
 	
+	@Override
 	// default method x should be overridden
 	public void defaultMethodx() {
 		System.out.println("I am inside default methodx in ZImpl ");

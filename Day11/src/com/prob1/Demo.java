@@ -6,11 +6,12 @@ public class Demo {
 		
 		
 	 ZImpl zimpl = new ZImpl();
+	 
 	 zimpl.abstractMethodx();
 	 zimpl.abstractMethodY();
 	 zimpl.defaultMethodx();
 	 zimpl.defaultMethodY();
-	
+
 		X.staticMethodx();   // Calling with interface
 		Y.staticMethodY();
 
