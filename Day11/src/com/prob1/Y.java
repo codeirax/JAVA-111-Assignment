@@ -4,7 +4,7 @@ public interface Y {
 	
 	  void abstractMethodY();
 	  
-		default void defaultMethodY() {
+		default void defaultMethod() {
 			System.out.println("I am default method of Y");
 			
 		}

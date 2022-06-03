@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 
 	
-		IPL std =new IPL();
+		IPL std = new IPL();   // to accessing method.
 		
 		Scanner in = new Scanner(System.in);
 		

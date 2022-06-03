@@ -9,11 +9,11 @@ public class Demo {
 	 
 	 zimpl.abstractMethodx();
 	 zimpl.abstractMethodY();
-	 zimpl.defaultMethodx();
-	 zimpl.defaultMethodY();
+	 zimpl.defaultMethod();
+	 zimpl.defaultMethod();
 
-		X.staticMethodx();   // Calling with interface
-		Y.staticMethodY();
+		X.staticMethod();   // Calling with interface
+		Y.staticMethod();
 
 	}
 

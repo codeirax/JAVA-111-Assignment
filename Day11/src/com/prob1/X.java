@@ -2,9 +2,9 @@ package com.prob1;
 
 public interface X {
 
-	  void abstractMethodx();
+	  void abstractMethod();
 	  
-	default void defaultMethodx() {
+	default void defaultMethod() {
 		System.out.println("I am inside default method X ");
 	}
 	
