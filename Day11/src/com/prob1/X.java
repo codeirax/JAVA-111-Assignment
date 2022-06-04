@@ -1,15 +1,14 @@
 package com.prob1;
 
 public interface X {
-
-	  void abstractMethod();
-	  
-	default void defaultMethod() {
-		System.out.println("I am inside default method X ");
-	}
+  
+	void walk();
 	
-	public static void staticMethodx() {
-		System.out.println("I am static method of X");
-	}
-	
-}
+    default void fly() {
+    	System.out.println("I can fly  in Xintr");
+    }
+    
+    public static void run() {
+    	System.out.println("I can run in Xintr");
+    }
+}  

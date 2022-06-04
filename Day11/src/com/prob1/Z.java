@@ -1,11 +1,6 @@
 package com.prob1;
 
-public interface Z  extends X,Y{
-    abstract void zMethod();
+public interface Z extends X,Y{
 
-	@Override
-	default void defaultMethod() {
-		// TODO Auto-generated method stub
-		X.super.defaultMethod();
-	}
+	void driving();
 }
