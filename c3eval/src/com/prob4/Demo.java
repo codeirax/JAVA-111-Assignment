@@ -6,6 +6,8 @@ import java.util.regex.Pattern;
 public class Demo {
 	
 	 boolean validate(String username,String password,String mobile,String email) {
+		 
+		 
            if(!Pattern.matches("[a-z]{3,8}", username)) {
         	   return false;
            }
@@ -17,12 +19,14 @@ public class Demo {
 		  if(!Pattern.matches("[56789]{1}[0-9]{9}", mobile)) {
 			  return false;
 		  }
-		  if(!Pattern.matches("^(.+)@(\\S+)$", email)) {
+		  if(!Pattern.matches("[a-ZA-20-9] + [@]{1}+[a-zA-Z.]", email)) {
 			  return false;
 		  }
 			   else {
 			  return true;
 		  }
+		  
+		  
 	  }
 
 	 

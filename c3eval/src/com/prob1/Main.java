@@ -10,13 +10,17 @@ public class Main {
 		System.out.println("Enter the size of the array :");
 		
 		int arrSize = input.nextInt();
+	
 		String[] arr = new String[arrSize];
 		
 		System.out.println("Enter elements of the array :");
 		for(int i = 0; i < arrSize; i++) {
-			String arrElem = input.next();
+			
+			String arrElem = input.next();  //taking input from the user
 			arr[i] = arrElem;
 		}
+		
+		
 		// handling
 		try {
 			System.out.println("Enter the index of the array element you want to access :");
@@ -28,9 +32,11 @@ public class Main {
 		
 		catch(ArrayIndexOutOfBoundsException abe) {
 			System.out.println("java.lang.ArrayIndexOutOfBoundsException");
+			System.out.println(abe.getMessage());
 		}
 		catch(InputMismatchException nfe) {
 			System.out.println("java.lang.InputMismatchException");
+			System.out.println(nfe.getMessage());
 		}
 	}
 }
