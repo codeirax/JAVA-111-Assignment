@@ -1,4 +1,4 @@
-package com.standupt;
+package com.standup;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -18,7 +18,6 @@ public class ArrPrint {
 	  for(int i = 0; i<lengthOfArr; i++) {
 		  arr[i] = in.nextLine();
 	  }
-	  
 	  
 	
 	   System.out.println(Arrays.toString(arr));

@@ -10,18 +10,10 @@ public class PlayList {
   public List<Song> songs = new ArrayList<>();
 
 
-
-
-
-
 	public void addSong(Song song) {
-		
-	
-	
-	     songs.add(song);
-	    
-	 
-	 
+
+	       songs.add(song);
+	       
 	}
 	
 	

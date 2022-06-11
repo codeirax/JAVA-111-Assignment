@@ -27,9 +27,12 @@ public class Song {
 			return true;
 		if (obj == null)
 			return false;
+		
 		if (getClass() != obj.getClass())
 			return false;
+		
 		Song other = (Song) obj;
+		
 		return Objects.equals(movieName, other.movieName) && Objects.equals(songName, other.songName);
 	}
 	

@@ -1,4 +1,4 @@
-package com.standupt;
+package com.standup;
 
 public class CliArgs {
 	
