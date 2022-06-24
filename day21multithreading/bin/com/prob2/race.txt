@@ -1,0 +1,13 @@
+
+What is a race condition?
+
+Answer :-  In layman terms, a race condition can be defined as, a 
+condition in which two or more threads compete together to
+get certain shared resources. This concurrency issue lead to the race-condition.
+ and race-condition lead to the data inconsistency
+ 
+To solve the data inconsistency problem in java synchronized keyword is used.
+So the thread-safety is achieved and race condition is avoided by the help of synchronized keyword.
+ 
+ 
+ 
