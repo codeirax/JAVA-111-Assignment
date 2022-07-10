@@ -1,0 +1,13 @@
+
+
+create database db1;
+
+create table employee
+(
+eid int primary key,
+name varchar(15),
+address varchar(15),
+salary int
+);
+
+use db1;
